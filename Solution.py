@@ -3,40 +3,54 @@ from typing import List
 
 class Solution:
 
-    def next_step(self, nums: List[int], used_indexes: set[int]) -> tuple[set[int], set[int]]:
+    def next_step(self, nums: List[int], used_indexes: list[[int, bool]]) -> bool:
         prev: int = 0
-        indexes: set[int] = set()
-        indexes_min: set[int] = set()
+        prev_idx: [int, bool] = None
         all_prev_smaller: bool = True
 
-        for i in used_indexes:
-            n: int = nums[i]
+        for idx in used_indexes:
+            # for idx in [k for k in used_indexes if k[1]]:
+            n: int = nums[idx[0]]
 
-            if i == 0:
+            if prev_idx is None:
                 prev = n
+                prev_idx = idx
             else:
                 if prev > n:
-                    indexes.add(i)
+                    idx[1] = False
+                    # indexes.add(i)
                     all_prev_smaller = False
                 else:
                     if all_prev_smaller:
-                        indexes_min.add(i-1)
+                        prev_idx[1] = False
+                        # indexes_min.add(i-1)
                 prev = n
+                prev_idx = idx
 
-        return indexes, indexes_min
+        return all_prev_smaller
 
     def totalSteps(self, nums: List[int]) -> int:
         steps: int = 0
 
-        used_indexes: set[int] = set([i for i in range(0, len(nums))])
+        used_indexes: list[[int, bool]] = [[i, True] for i in range(0, len(nums))]
+
+        cnt: int = 0
 
         while True:
-            indexes, indexes_min = self.next_step(nums, used_indexes)
+            test: bool = self.next_step(nums, used_indexes)
 
-            if len(indexes) > 0:
+            if not test:
                 steps += 1
-                used_indexes -= indexes.union(indexes_min)
+                # used_indexes -= indexes.union(indexes_min)
             else:
                 break
 
+            # if cnt % 100 == 0:
+                # used_indexes_new: list[[int, bool]] = []
+            used_indexes = [k for k in used_indexes if k[1]]
+                    # used_indexes_new.append(idx)
+                #
+                # used_indexes = used_indexes_new
+
+            cnt += 1
         return steps

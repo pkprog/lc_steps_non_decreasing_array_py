@@ -40,7 +40,7 @@ def load_from_file(file_name: str) -> List[int]:
 # run_test(test2)
 # test3: List[int] = [5, 3, 4, 4, 7, 3, 6, 11, 8, 5, 11]  # 3
 # run_test(test3)
-test6 = load_from_file("resources/test_case5.txt")  # 17599
-run_test(test6)
-# test7 = load_from_file("resources/test_case6.txt")  # 99999
+test79 = load_from_file("resources/test_case79.txt")  # 17599
+run_test(test79)
+# test7 = load_from_file("resources/test_case84.txt")  # 99999
 # run_test(test7)

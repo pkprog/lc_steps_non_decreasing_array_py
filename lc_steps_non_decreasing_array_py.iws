@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a0c64bb-3bf1-46f5-bb45-a8079f40d72e" name="Changes" comment="v2">
+    <list default="true" id="7a0c64bb-3bf1-46f5-bb45-a8079f40d72e" name="Changes" comment="v3: неплохо работает, но медленно">
       <change beforePath="$PROJECT_DIR$/Solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Starter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Starter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lc_steps_non_decreasing_array_py.iws" beforeDir="false" afterPath="$PROJECT_DIR$/lc_steps_non_decreasing_array_py.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/test_case5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/test_case79.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/test_case6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/test_case84.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +63,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -177,7 +181,7 @@
       <workItem from="1669668598481" duration="1079000" />
       <workItem from="1669989141963" duration="4153000" />
       <workItem from="1670223976052" duration="9409000" />
-      <workItem from="1670310242600" duration="16760000" />
+      <workItem from="1670310242600" duration="25013000" />
     </task>
     <task id="LOCAL-00001" summary="Начало. Заодно питон поизучаю">
       <created>1670011870846</created>
@@ -207,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670342738365</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="v3: неплохо работает, но медленно">
+      <created>1670343940589</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670343940589</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,10 +241,11 @@
     <MESSAGE value="Часть тестов проходит" />
     <MESSAGE value="Пока скорость уступает скорости в джаве раз в 5" />
     <MESSAGE value="v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2" />
+    <MESSAGE value="v3: неплохо работает, но медленно" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3: неплохо работает, но медленно" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$hw.coverage" NAME="hw Coverage Results" MODIFIED="1670224310973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$Starter.coverage" NAME="Starter Coverage Results" MODIFIED="1670343562913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$Starter.coverage" NAME="Starter Coverage Results" MODIFIED="1670353545260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
