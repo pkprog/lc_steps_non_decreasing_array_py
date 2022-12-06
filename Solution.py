@@ -2,35 +2,33 @@ from typing import List
 
 
 class Solution:
-    def __init__(self):
-        pass
+
+    def next_step(self, all_indexes: set[int], nums: List[int]) -> set[int]:
+        prev: int = 0
+        indexes: set[int] = set()
+        for i in all_indexes:
+            n: int = nums[i]
+
+            if i == 0:
+                prev = n
+            else:
+                if prev > n:
+                    indexes.add(i)
+                prev = n
+
+        return indexes
 
     def totalSteps(self, nums: List[int]) -> int:
         steps: int = 0
 
-        indexes: List[int] = []
-        prev_indexes_len: int = 0
+        all_indexes: set[int] = set([i for i in range(0, len(nums))])
 
-        # i: int = 0
         while True:
-            prev: int = 0
-            for i in range(0, len(nums)):
-                n: int = nums[i]
+            indexes = self.next_step(all_indexes, nums)
 
-                if i == 0:
-                    prev = n
-                else:
-                    for tmp in indexes:
-                        if tmp == i:
-                            break
-                    else:
-                        if prev > n:
-                            indexes.append(i)
-                        prev = n
-
-            if prev_indexes_len < len(indexes):
+            if len(indexes) > 0:
                 steps += 1
-                prev_indexes_len = len(indexes)
+                all_indexes -= indexes
             else:
                 break
 
