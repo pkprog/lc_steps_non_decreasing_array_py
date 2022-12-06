@@ -4,7 +4,7 @@ from Solution import Solution
 
 
 def run_test(list_numbers: List[int]):
-    print("Start:" + str(datetime.datetime.now()))
+    print(">>>>Start: " + datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S"))
     if len(list_numbers) > 100:
         print("Test array [length=" + str(len(list_numbers)) + "]")
     else:
@@ -16,7 +16,7 @@ def run_test(list_numbers: List[int]):
     sol = Solution()
     res: int = sol.totalSteps(list_numbers)
     print("*****Result: " + str(res))
-    print("End:" + str(datetime.datetime.now()))
+    print("<<<<End: " + datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S"))
 
 
 def load_from_file(file_name: str) -> List[int]:
