@@ -3,54 +3,50 @@ from typing import List
 
 class Solution:
 
-    def next_step(self, nums: List[int], used_indexes: list[[int, bool]]) -> bool:
-        prev: int = 0
-        prev_idx: [int, bool] = None
-        all_prev_smaller: bool = True
+    def split_list(self, nums: List[int]) -> List[List[int]]:
+        lowering_lists: List[List[int]] = []
 
-        for idx in used_indexes:
-            # for idx in [k for k in used_indexes if k[1]]:
-            n: int = nums[idx[0]]
-
-            if prev_idx is None:
-                prev = n
-                prev_idx = idx
+        prev: int = -1
+        curr: List[int] = []
+        for i, n in enumerate(nums):
+            if i == 0:
+                curr.append(n)
+                lowering_lists.append(curr)
             else:
                 if prev > n:
-                    idx[1] = False
-                    # indexes.add(i)
-                    all_prev_smaller = False
+                    curr = [n]
+                    lowering_lists.append(curr)
                 else:
-                    if all_prev_smaller:
-                        prev_idx[1] = False
-                        # indexes_min.add(i-1)
-                prev = n
-                prev_idx = idx
+                    curr.append(n)
 
-        return all_prev_smaller
+            prev = n
+
+        return lowering_lists
 
     def totalSteps(self, nums: List[int]) -> int:
         steps: int = 0
 
-        used_indexes: list[[int, bool]] = [[i, True] for i in range(0, len(nums))]
+        # 1.Разбить на понижении высоты
+        lowering_lists: List[List[int]] = self.split_list(nums)
 
-        cnt: int = 0
+        # 3.Взять последний элемент из предыдущего массива PREV_MAX, и перебором в следующем массиве найти число элементов до PREV_MAX <= CURR_MIN
+        # 4.Максимальное число шагов в массивах - это число оставшихся шагов (четыре, а результат 5. Но шаг 2 можно пропустить, тогда сразу будет 5)
+        prev_max: int = -1
+        j_max: int = -1
+        for i, tmp in enumerate(lowering_lists):
+            if i > 0:
+                for j, n in enumerate(tmp):
+                    if prev_max <= n:
+                        if j_max < (j-1):
+                            j_max = (j-1)
+                            break
+                else:
+                    if j_max < len(tmp)-1:
+                        j_max = len(tmp)-1
 
-        while True:
-            test: bool = self.next_step(nums, used_indexes)
+            if prev_max < tmp[len(tmp)-1]:
+                prev_max = tmp[len(tmp)-1]
 
-            if not test:
-                steps += 1
-                # used_indexes -= indexes.union(indexes_min)
-            else:
-                break
+        steps = j_max + 1
 
-            # if cnt % 100 == 0:
-                # used_indexes_new: list[[int, bool]] = []
-            used_indexes = [k for k in used_indexes if k[1]]
-                    # used_indexes_new.append(idx)
-                #
-                # used_indexes = used_indexes_new
-
-            cnt += 1
         return steps
