@@ -39,7 +39,7 @@ class Solution:
                     if prev_max <= n:
                         if j_max < (j-1):
                             j_max = (j-1)
-                            break
+                        break
                 else:
                     if j_max < len(tmp)-1:
                         j_max = len(tmp)-1

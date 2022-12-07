@@ -108,8 +108,10 @@ def load_from_file(file_name: str) -> List[int]:
 # run_test(test4)
 # test5: List[int] = [1,2,80,6,5,10,11,12,12,14,1,2,3,2,1] # 6
 # run_test(test5)
-# test79 = load_from_file("resources/test_case79.txt")  # 17599
-# run_test(test79)
+# test6: List[int] = [10,6,5,10,15] # 1
+# run_test(test6)
+test79 = load_from_file("resources/test_case79.txt")  # 17599
+run_test(test79)
 test7 = load_from_file("resources/test_case84.txt")  # 99999
 run_test(test7)
 
