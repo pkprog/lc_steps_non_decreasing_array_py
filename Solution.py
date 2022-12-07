@@ -33,31 +33,28 @@ class Solution:
         # 4.Максимальное число шагов в массивах - это число оставшихся шагов (четыре, а результат 5. Но шаг 2 можно пропустить, тогда сразу будет 5)
         total_max: int = -1
         prev_max: int = -1
-        j_max: int = -1
+        prev_len: int = 0
         for i, tmp in enumerate(lowering_lists):
             if i > 0:
-                plus_steps: int = 0
-
                 for j, n in enumerate(tmp):
-                    if prev_max <= n and plus_steps == 0:
-                        plus_steps = j
-
                     if total_max <= n:
-                        new_j_max = (j-1) + plus_steps
-
-                        if j_max < new_j_max:
-                            j_max = new_j_max
                         break
-                else:
-                    new_j_max = len(tmp)-1 + plus_steps
-                    if j_max < new_j_max:
-                        j_max = new_j_max
+
+                    # tmp_max: int
+                    if prev_len < steps:
+                        if (j+1) > steps:
+                            steps += 1
+                    else:
+                        if prev_max < n:
+                            steps += 1
+                        else:
+                            if (j+1) > steps:
+                                steps += 1
 
             if total_max < tmp[len(tmp)-1]:
                 total_max = tmp[len(tmp)-1]
 
             prev_max = tmp[len(tmp)-1]
-
-        steps = j_max + 1
+            prev_len = len(tmp)
 
         return steps
