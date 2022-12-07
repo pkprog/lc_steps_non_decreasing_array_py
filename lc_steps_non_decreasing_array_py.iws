@@ -180,7 +180,7 @@
       <workItem from="1669989141963" duration="4153000" />
       <workItem from="1670223976052" duration="9409000" />
       <workItem from="1670310242600" duration="25637000" />
-      <workItem from="1670435488875" duration="4701000" />
+      <workItem from="1670435488875" duration="8922000" />
     </task>
     <task id="LOCAL-00001" summary="Начало. Заодно питон поизучаю">
       <created>1670011870846</created>
@@ -231,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670439909835</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="v5: Совершенно другой подход - разбивка на подмассивы по понижению высот">
+      <created>1670440239385</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670440239385</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +271,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Solution.py</url>
-          <line>51</line>
+          <line>62</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -277,6 +284,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$hw.coverage" NAME="hw Coverage Results" MODIFIED="1670224310973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$Starter.coverage" NAME="Starter Coverage Results" MODIFIED="1670440227572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$Starter.coverage" NAME="Starter Coverage Results" MODIFIED="1670444224561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
