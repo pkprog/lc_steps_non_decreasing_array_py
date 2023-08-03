@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a0c64bb-3bf1-46f5-bb45-a8079f40d72e" name="Changes" comment="v5: ошибка в подсчете">
+    <list default="true" id="7a0c64bb-3bf1-46f5-bb45-a8079f40d72e" name="Changes" comment="v5.1: новый алгоритм">
+      <change afterPath="$PROJECT_DIR$/resources/test_case60.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Solution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Starter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Starter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lc_steps_non_decreasing_array_py.iws" beforeDir="false" afterPath="$PROJECT_DIR$/lc_steps_non_decreasing_array_py.iws" afterDir="false" />
     </list>
@@ -21,6 +23,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -64,7 +77,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Python.Starter">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -180,7 +193,9 @@
       <workItem from="1670223976052" duration="9409000" />
       <workItem from="1670310242600" duration="25637000" />
       <workItem from="1670435488875" duration="14529000" />
-      <workItem from="1670484723098" duration="3821000" />
+      <workItem from="1670484723098" duration="3857000" />
+      <workItem from="1688654235529" duration="6974000" />
+      <workItem from="1691053851875" duration="10792000" />
     </task>
     <task id="LOCAL-00001" summary="Начало. Заодно питон поизучаю">
       <created>1670011870846</created>
@@ -252,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670450152577</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="v5.1: новый алгоритм">
+      <created>1670488911322</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670488911322</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,26 +301,25 @@
     <MESSAGE value="v4: неплохо работает, но медленно" />
     <MESSAGE value="v5: Совершенно другой подход - разбивка на подмассивы по понижению высот" />
     <MESSAGE value="v5: ошибка в подсчете" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5: ошибка в подсчете" />
+    <MESSAGE value="v5.1: новый алгоритм" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.1: новый алгоритм" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Solution.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Solution.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="3" />
+          <line>147</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="YamllintSettings">
+    <option name="binPath" value="yamllint" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$hw.coverage" NAME="hw Coverage Results" MODIFIED="1670224310973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$Starter.coverage" NAME="Starter Coverage Results" MODIFIED="1670484876657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$Starter.coverage" NAME="Starter Coverage Results" MODIFIED="1691070461705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
