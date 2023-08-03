@@ -14,7 +14,7 @@ def run_test(list_numbers: List[int]):
         print("Test array [" + s + "]")
 
     sol = Solution()
-    res: int = sol.totalSteps2(list_numbers)
+    res: int = sol.totalSteps(list_numbers)
     print("*****Result: " + str(res))
     print("<<<<End: " + datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S"))
 
@@ -268,6 +268,12 @@ def load_from_file(file_name: str) -> List[int]:
 
 # test9: List[int] = [2,19,4,5,8,1,2,10,11,2,19,20,3,4]
 # run_test(test9)
+
+# test9_2: List[int] = [15,10,9,8,7,6,14,2,3,150] #2
+# run_test(test9_2)
+
+# test9_3: List[int] = [15,1,2,3,4,14,2,3,4,10,1,150,151] #5
+# run_test(test9_3)
 
 # test54: List[int] = [546,1384,96,334,1428,1819,1858,38,616,858,1089,1298,1714,1818,129,352,739,1089,1314,1323,1395,1424,1696,1804,23,738,806,990,1455,1908,327,1237,1266,352,381,206,1084,1109,1281,773]
 # run_test(test54)  # 10

@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a0c64bb-3bf1-46f5-bb45-a8079f40d72e" name="Changes" comment="v5.1: новый алгоритм">
-      <change afterPath="$PROJECT_DIR$/resources/test_case60.txt" afterDir="false" />
+    <list default="true" id="7a0c64bb-3bf1-46f5-bb45-a8079f40d72e" name="Changes" comment="v6: новый алгоритм - вариант без массива, а через односвязный список">
       <change beforePath="$PROJECT_DIR$/Solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Solution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Starter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Starter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lc_steps_non_decreasing_array_py.iws" beforeDir="false" afterPath="$PROJECT_DIR$/lc_steps_non_decreasing_array_py.iws" afterDir="false" />
@@ -195,7 +194,8 @@
       <workItem from="1670435488875" duration="14529000" />
       <workItem from="1670484723098" duration="3857000" />
       <workItem from="1688654235529" duration="6974000" />
-      <workItem from="1691053851875" duration="10792000" />
+      <workItem from="1691053851875" duration="13928000" />
+      <workItem from="1691074694001" duration="2982000" />
     </task>
     <task id="LOCAL-00001" summary="Начало. Заодно питон поизучаю">
       <created>1670011870846</created>
@@ -274,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670488911322</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="v6: новый алгоритм - вариант без массива, а через односвязный список">
+      <created>1691070582125</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1691070582125</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,15 +309,16 @@
     <MESSAGE value="v5: Совершенно другой подход - разбивка на подмассивы по понижению высот" />
     <MESSAGE value="v5: ошибка в подсчете" />
     <MESSAGE value="v5.1: новый алгоритм" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.1: новый алгоритм" />
+    <MESSAGE value="v6: новый алгоритм - вариант без массива, а через односвязный список" />
+    <option name="LAST_COMMIT_MESSAGE" value="v6: новый алгоритм - вариант без массива, а через односвязный список" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Solution.py</url>
-          <line>147</line>
-          <option name="timeStamp" value="13" />
+          <line>64</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -320,6 +328,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$hw.coverage" NAME="hw Coverage Results" MODIFIED="1670224310973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$Starter.coverage" NAME="Starter Coverage Results" MODIFIED="1691070461705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$Starter.coverage" NAME="Starter Coverage Results" MODIFIED="1691077645475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
