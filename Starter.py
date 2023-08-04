@@ -1,6 +1,8 @@
 import datetime
 from typing import List
-from Solution import Solution
+
+from Solution import Solution as Solution
+from Solution2 import Solution as Solution2
 
 
 def run_test(list_numbers: List[int]):
@@ -13,9 +15,12 @@ def run_test(list_numbers: List[int]):
             s += ("," if i > 0 else "") + str(list_numbers[i])
         print("Test array [" + s + "]")
 
-    sol = Solution()
+    sol1 = Solution()
+    res1: int = sol1.totalSteps(list_numbers)
+
+    sol = Solution2()
     res: int = sol.totalSteps(list_numbers)
-    print("*****Result: " + str(res))
+    print("*****Result: " + str(res) + " (old result: "+ str(res1) +")")
     print("<<<<End: " + datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S"))
 
 
@@ -247,7 +252,7 @@ def load_from_file(file_name: str) -> List[int]:
 
 """
 
-# test0: List[int] = [1, 2, 8, 5, 6] # 2
+# test0: List[int] = [1, 2, 8, 5, 6]  # 2
 # run_test(test0)
 # test1: List[int] = [1, 2, 4, 3]  # 1
 # run_test(test1)
@@ -261,10 +266,22 @@ def load_from_file(file_name: str) -> List[int]:
 # run_test(test5)
 # test6: List[int] = [10,6,5,10,15] # 1
 # run_test(test6)
+#
 # test7: List[int] = [5,14,15,2,11,5,13,15] # 3
 # run_test(test7)
-# test8: List[int] = [1682,63,124,147,897,1210,1585,1744,1764,1945,323,984,1886,346,481,1059,1388,1483,1516,1842,1868,1877,504,1197,785,955,970,1848,1851,398,907,995,1167,1214,1423,1452,1464,1474,1311,1427,1757,1992,57,1625,1260,700,725]
-# run_test(test8)  #10
+
+# test7_1: List[int] = [5,14,15,2,2,2,2,2,11,5,5,5,5,5,13,14,10,11,12,13,14,14,14,16] # 11
+# run_test(test7_1)
+
+# test7_2: List[int] = [5,14,15,2,2,2,11,5,5,5,5,5,13,14,10,11,12,13,14,14,14,16] # 10
+# run_test(test7_2)
+
+
+test8: List[int] = [1682,63,124,147,897,1210,1585,1744,1764,1945,323,984,1886,346,481,1059,1388,1483,1516,1842,1868,1877,504,1197,785,955,970,1848,1851,398,907,995,1167,1214,1423,1452,1464,1474,1311,1427,1757,1992,57,1625,1260,700,725]
+run_test(test8)  #10
+
+# test8_1: List[int] = [1682,1945,323,984,1886,346,481,1059,1388,1452,1464,1474,1311,1427,1757,1992]
+# run_test(test8_1)  #10
 
 # test9: List[int] = [2,19,4,5,8,1,2,10,11,2,19,20,3,4]
 # run_test(test9)
@@ -275,14 +292,28 @@ def load_from_file(file_name: str) -> List[int]:
 # test9_3: List[int] = [15,1,2,3,4,14,2,3,4,10,1,150,151] #5
 # run_test(test9_3)
 
+# test9_4: List[int] = [15,1,2,3,14,12,15,16,16,1,2,3,4,5,21,22,33,1,2,3,16,14,14,2,3,10,12,14,15,31,32] #8
+# run_test(test9_4)
+
 # test54: List[int] = [546,1384,96,334,1428,1819,1858,38,616,858,1089,1298,1714,1818,129,352,739,1089,1314,1323,1395,1424,1696,1804,23,738,806,990,1455,1908,327,1237,1266,352,381,206,1084,1109,1281,773]
 # run_test(test54)  # 10
 # test60: List[int] = [254,1768,173,1630,38,1291,359,1758,584,1391,287,1444,1609,684,1788,579,1850,558,178,165,301,1087,1213,584,499,1499,726,1659,1028,1867,1883,583,632,724,784,1649,1436,525,234,1860,392,191,158,1309,1312,1353,343,214,542,1228,801,1738,1534,1878,1511,1389,1528,1815,1556,1537,96,403,1656,1547,933,1750,1681,392,207,1359]
 # run_test(test60)
+#
+#
+# test60_2: List[int] = [1768, 1788, 1850, 1883,
+#                        583,632,724,784,1649 , 1436 , 525 , 234,1860 , 392 , 191 , 158,1309,1312,1353 , 343 , 214,542,1228 , 801,1738 , 1534,1878 , 1511 , 1389,1528,1815 , 1556 , 1537 , 96,403,1656 , 1547 , 933,1750 , 1681 , 392 , 207,1359
+#                        ]
+# run_test(test60_2)  # 7
+
+# test60_3: List[int] = [1768, 1788, 1850, 1883, 583, 632, 1436, 525, 234, 1860, 392, 191, 158, 1309, 343, 214, 542, 1228, 1547, 933, 1750, 1359]
+# run_test(test60_3)
+
+
 # test60_file = load_from_file("resources/test_case60.txt")  # 7
 # run_test(test60_file)
-test79 = load_from_file("resources/test_case79.txt")  # 17599
-run_test(test79)
+# test79 = load_from_file("resources/test_case79.txt")  # 17599
+# run_test(test79)
 # test7 = load_from_file("resources/test_case84.txt")  # 99999
 # run_test(test7)
 

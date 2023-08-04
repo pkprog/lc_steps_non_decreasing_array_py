@@ -79,6 +79,6 @@ class Solution:
             else:
                 break
 
-        print("cnt=" + str(cnt))
+        # print("cnt=" + str(cnt))
 
         return steps
