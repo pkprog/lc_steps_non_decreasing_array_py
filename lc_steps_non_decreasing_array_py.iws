@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a0c64bb-3bf1-46f5-bb45-a8079f40d72e" name="Changes" comment="v6: новый алгоритм - вариант без массива, а через односвязный список. Почистил">
-      <change afterPath="$PROJECT_DIR$/Solution2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Solution.py" afterDir="false" />
+    <list default="true" id="7a0c64bb-3bf1-46f5-bb45-a8079f40d72e" name="Changes" comment="v7: новый алгоритм - Цепочки между неудаляемыми самыми королевскими элементами">
+      <change beforePath="$PROJECT_DIR$/Solution2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Solution2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Starter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Starter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lc_steps_non_decreasing_array_py.iws" beforeDir="false" afterPath="$PROJECT_DIR$/lc_steps_non_decreasing_array_py.iws" afterDir="false" />
     </list>
@@ -203,7 +202,9 @@
       <workItem from="1691053851875" duration="13928000" />
       <workItem from="1691074694001" duration="5370000" />
       <workItem from="1691157296156" duration="1971000" />
-      <workItem from="1691163646044" duration="20284000" />
+      <workItem from="1691163646044" duration="20316000" />
+      <workItem from="1691655746389" duration="702000" />
+      <workItem from="1693167581955" duration="7755000" />
     </task>
     <task id="LOCAL-00001" summary="Начало. Заодно питон поизучаю">
       <created>1670011870846</created>
@@ -296,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691079676418</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="v7: новый алгоритм - Цепочки между неудаляемыми самыми королевскими элементами">
+      <created>1691186431225</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1691186431226</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,35 +334,16 @@
     <MESSAGE value="v5.1: новый алгоритм" />
     <MESSAGE value="v6: новый алгоритм - вариант без массива, а через односвязный список" />
     <MESSAGE value="v6: новый алгоритм - вариант без массива, а через односвязный список. Почистил" />
-    <option name="LAST_COMMIT_MESSAGE" value="v6: новый алгоритм - вариант без массива, а через односвязный список. Почистил" />
+    <MESSAGE value="v7: новый алгоритм - Цепочки между неудаляемыми самыми королевскими элементами" />
+    <option name="LAST_COMMIT_MESSAGE" value="v7: новый алгоритм - Цепочки между неудаляемыми самыми королевскими элементами" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Solution2.py</url>
-          <line>118</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Solution2.py</url>
-          <line>143</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Solution2.py</url>
-          <line>116</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Solution2.py</url>
-          <line>93</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Solution2.py</url>
-          <line>127</line>
-          <option name="timeStamp" value="15" />
+          <line>283</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -364,6 +353,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$hw.coverage" NAME="hw Coverage Results" MODIFIED="1670224310973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$Starter.coverage" NAME="Starter Coverage Results" MODIFIED="1691186359670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lc_steps_non_decreasing_array_py$Starter.coverage" NAME="Starter Coverage Results" MODIFIED="1693175322198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
